@@ -574,7 +574,7 @@ impl TestGenerator {
                .flag("/wd4668")  // using an undefined thing in preprocessor?
                 ;
         } else {
-            cfg.flag("-Wall").flag("-Wextra").flag("-Werror")
+            cfg.flag("-Wall").flag("-Wextra")
                .flag("-Wno-unused-parameter")
                .flag("-Wno-type-limits");
         }
